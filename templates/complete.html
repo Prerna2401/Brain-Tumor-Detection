@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Tumor Detection</title>
+</head>
+
+<body style="background-color: #f0f0f0;">
+
+    <header style="background-color: #007bff; padding: 10px; text-align: center;">
+        <h1 style="color: white;">Brain Tumor Detection</h1>
+        <br><br>
+    </header>
+
+    <div style="text-align: center; margin-top: 30px;">
+        <h3>Result</h3><br>
+        <img src="../images/{{ image_name }}" height="300px" alt="Brain MRI Image" style="margin: 0 auto; display: block; width: 25%;">
+    </div>
+
+    {% if predvalue %}
+    <h4 style="text-align: center; color: red;">Result: Brain Tumor detected!!!</h4>
+    {% else %}
+    <h4 style="text-align: center; color: green;">Result: No Brain Tumor</h4>
+    {% endif %}
+
+</body>
+</html>
