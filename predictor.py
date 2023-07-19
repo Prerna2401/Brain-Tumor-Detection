@@ -1,7 +1,7 @@
 import numpy as np
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras.models import load_model
-saved_model = load_model("model/brain-vgg19.h5")
+saved_model = load_model("model/brain_cnn.h5")
 status = True
 
 
